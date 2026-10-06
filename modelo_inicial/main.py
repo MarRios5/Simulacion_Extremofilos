@@ -5,12 +5,10 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 
-# Integración de Matplotlib con PyQt5
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 from matplotlib.figure import Figure
 
-# Importar nuestros módulos
 from config import DATOS_PROFE
 from model import simular_bioproceso_shp
 
