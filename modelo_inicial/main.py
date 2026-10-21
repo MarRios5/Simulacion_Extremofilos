@@ -5,8 +5,8 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
+from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt import NavigationToolbar2QT as NavigationToolbar
 from matplotlib.figure import Figure
 
 from config import DATOS_PROFE
@@ -41,7 +41,7 @@ class CanvasGrafico(FigureCanvas):
 
         # Leyenda superior combinada
         lines = l1 + l2
-        labels = [l.get_label() for l in lines]
+        labels = [str(l.get_label()) for l in lines]
         self.ax1.legend(lines, labels, loc='upper center', bbox_to_anchor=(0.5, 1.14), ncol=2, fontsize=9)
 
         self.ax1.grid(True, alpha=0.3)
