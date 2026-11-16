@@ -11,7 +11,7 @@ from matplotlib.figure import Figure
 
 from config import DATOS_PROFE
 from model import simular_bioproceso_shp
-
+ 
 
 class CanvasGrafico(FigureCanvas):
     def __init__(self, parent=None):

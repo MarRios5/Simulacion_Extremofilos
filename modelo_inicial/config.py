@@ -9,4 +9,4 @@ DATOS_PROFE = {
     "tiempo_het": "40",  
     "tiempo_fot": "40"   
     # el tiempo de heterotrofía y fotoinducción se asume en horas(datos de literatura)
-}
+} 
